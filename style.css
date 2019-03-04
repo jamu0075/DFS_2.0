@@ -1,0 +1,141 @@
+@font-face {
+  font-family: ostrich-black;
+  src: url('font/ostrich-sans-master/webfonts/ostrich-sans-black.woff');
+}
+@font-face {
+  font-family: ostrich-reg;
+  src: url('font/ostrich-sans-master/webfonts/ostrich-sans-regular.woff');
+}
+body, html {
+  background-color: #fcfaf8;
+  font-family: "Courier New", "Times New Roman", "Times serif";
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+.navbar-container {
+  background-color:  #F5F5F5;
+  border-right: 2px solid #E9E9E9;
+  font-family: "ostrich-reg";
+  height: 100vh;
+  width: 15%;
+  position: fixed;
+}
+.navbar-logo {
+  /*border: 2px solid red;*/
+  font-size: 30px;
+  text-align: center;
+  font-family: "ostrich-black";
+  padding: 24px;
+}
+hr {
+  display:block;
+  margin-top: 12px;
+  width: 95%;
+  background-color:black;
+  height: 1px;
+}
+
+.navbar ul {
+  /*border: 2px solid green;*/
+  list-style: none;
+  margin-left: auto;
+  margin-right: 0;
+  padding: 16px;
+  text-align: center;
+}
+.navbar li {
+  font-size: 22px;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.navbar li a {
+  /*border: 2px solid yellow;*/
+  color: black;
+  text-decoration: none;
+  transition: color .3s;
+  padding: 8px;
+}
+.navbar li a:hover {
+  color: #87807d;
+}
+.icon-insta {
+  position: absolute;
+  bottom: 0;
+  left: 1px;
+}
+
+.content {
+  margin-left: 15%;
+  text-align: center;
+  /*border: 2px solid black;*/
+}
+.img-banner {
+  margin-top: 24px;
+  width: 95%;
+  height: 45vh;
+  object-fit: cover;
+  -webkit-transition: .2s ease;
+  transition: .2s;
+}
+.img-banner:hover{
+  -ms-transform: scale(1.02); /* IE 9 */
+  -webkit-transform: scale(1.02); /* Safari 3-8 */
+  transform: scale(1.02);
+}
+.img-grid {
+  margin: 38px 16px 0 0;
+  width: 30%;
+  height:45vh;
+  object-fit: cover;
+  overflow: hidden;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+.img-grid:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05);
+}
+
+/* Small devices */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  .content {background: red; margin: 24px 0 0 0; width: 100%; text-align: center;}
+  .navbar-container {width: 100%; height: auto; position: relative; text-align: center; border-bottom: 2px solid #E9E9E9;}
+  .navbar ul { padding: 0; margin: 0;}
+  .navbar li {display: inline;}
+  .navbar a {display: inline-block;}
+  .icon-insta {display: none;}
+  .navbar-logo {padding: 16px;}
+}
+
+/*Medium Devices*/
+@media only screen and (min-width: 768px) and (max-width: 1224px){
+  .content {background: orange;}
+  .navbar-container {width: 100%; height: auto; position: relative; text-align: center; border-bottom: 2px solid #E9E9E9;}
+  .navbar ul { padding: 0; margin: 0;}
+  .navbar li {display: inline;}
+  .navbar a {display: inline-block; margin-right: 10px;}
+  .content {background: blue; margin: 0; width: 100%; text-align: center;}
+  .icon-insta {display: none;}
+  .navbar-logo {padding: 16px;}
+  /*.navbar ul {text-align: left; padding-left: 0;}*/
+}
+
+/*large devices */
+@media only screen and (min-width: 1224px) {
+
+  .navbar ul {text-align: center;}
+}
